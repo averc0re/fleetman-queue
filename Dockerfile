@@ -8,4 +8,4 @@ RUN tar -xzf activemq.tar.gz
 
 ENV JAVA_HOME=/usr/bin/
 
-CMD ["apache-activemq-5.17.3/bin/activemq", "console"]
+CMD ["apache-activemq-5.17.3/bin/activemq", "console", "-Djetty.host=0.0.0.0"]
